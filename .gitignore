@@ -3,4 +3,4 @@
 # Except this file
 !.gitignore
 # Exept app/code folder
-!*/app/code/
+!app/code/*

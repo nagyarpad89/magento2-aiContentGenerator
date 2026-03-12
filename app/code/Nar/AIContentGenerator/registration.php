@@ -8,4 +8,4 @@ declare(strict_types=1);
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Nar_AiContentGenerator', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Nar_AIContentGenerator', __DIR__);
