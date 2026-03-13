@@ -1,9 +1,12 @@
-.admin__menu .item-base.parent.level-0 > a:before {
+.admin__menu .item-nar.parent.level-0 > a:before {
     content: '';
     background: url('@{baseDir}Nar_AIContentGenerator/images/nar_logo_admin.png') no-repeat center center;
     background-size: cover;
 }
 
+.admin__menu .item-nar.parent.level-0 .submenu > ul > .level-1:only-of-type .submenu-group-title {
+    display: block;
+}
 .admin__page-nav._collapsed.nar-tab .title,
 .admin__page-nav._collapsed._show.nar-tab .title {
     background-image: url('@{baseDir}Nar_AIContentGenerator/images/nar_logo_admin.png');

@@ -15,12 +15,41 @@
             <label>AI Content Generator</label>
             <tab>nar</tab>
             <resource>Nar_AIContentGenerator::generator_config</resource>
-            <group id="settings" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Configuration</label>
+            <group id="settings" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
                 <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
                        showInStore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="product_settings" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Settings</label>
+                <field id="model" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Model Name</label>
+                    <source_model>Nar\AIContentGenerator\Model\Config\Source\Models</source_model>
+                    <comment><![CDATA[GPT-5 and GPT-5 mini models require significantly more tokens than GPT-4o mini and earlier models. To ensure successful content generation, increase the maximum tokens limit in the corresponding settings to approximately five times the previous setting.]]></comment>
+                </field>
+                <field id="max_token_short_desc" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Short Description Maximum Tokens</label>
+                    <comment>The maximum number of tokens to generate in the completion.</comment>
+                </field>
+                <field id="max_token_desc" translate="label comment" type="text" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description Maximum Tokens</label>
+                    <comment>The maximum number of tokens to generate in the completion.</comment>
+                </field>
+                <field id="max_token_meta_title" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Title Maximum Tokens</label>
+                    <comment>The maximum number of tokens to generate in the completion.</comment>
+                </field>
+                <field id="max_token_meta_keyword" translate="label comment" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Keyword Maximum Tokens</label>
+                    <comment>The maximum number of tokens to generate in the completion.</comment>
+                </field>
+                <field id="max_token_meta_desc" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Meta Description Maximum Tokens</label>
+                    <comment>The maximum number of tokens to generate in the completion.</comment>
                 </field>
             </group>
         </section>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Nar_AIContentGenerator::base" title="Nar" translate="title" module="Nar_AIContentGenerator" dependsOnModule="Nar_AIContentGenerator" sortOrder="40" resource="Nar_AIContentGenerator::root"/>
-        <add id="Nar_AIContentGenerator::config" title="Configuration" translate="title" module="Nar_AIContentGenerator" dependsOnModule="Nar_AIContentGenerator" sortOrder="30" parent="Nar_AIContentGenerator::base"
-             action="admin/system_config/edit/section/content_generator" resource="Nar_AIContentGenerator::config"/>
+        <add id="Nar_AIContentGenerator::nar" title="Nar" translate="title" module="Nar_AIContentGenerator" dependsOnModule="Nar_AIContentGenerator" sortOrder="50" resource="Nar_AIContentGenerator::nar"/>
+        <add id="Nar_AIContentGenerator::nar_content_generator" title="AI Content Generator" translate="title" module="Nar_AIContentGenerator" dependsOnModule="Nar_AIContentGenerator" sortOrder="40" parent="Nar_AIContentGenerator::nar" resource="Nar_AIContentGenerator::content_generator"/>
+        <add id="Nar_AIContentGenerator::nar_content_generator_config" title="Configuration" translate="title" module="Nar_AIContentGenerator" dependsOnModule="Nar_AIContentGenerator" sortOrder="20" parent="Nar_AIContentGenerator::nar_content_generator" action="admin/system_config/edit/section/content_generator" resource="Nar_AIContentGenerator::content_generator_config"/>
     </menu>
 </config>

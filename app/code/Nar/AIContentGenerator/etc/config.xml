@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <content_generator>
+            <product_settings>
+                <max_token_short_desc>3000</max_token_short_desc>
+                <max_token_desc>3800</max_token_desc>
+                <max_token_meta_title>200</max_token_meta_title>
+                <max_token_meta_keyword>200</max_token_meta_keyword>
+                <max_token_meta_desc>200</max_token_meta_desc>
+            </product_settings>
+        </content_generator>
+    </default>
+</config>
