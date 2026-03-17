@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+
+    <fieldset name="search-engine-optimization">
+        <field name="meta_title">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Meta Title</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <!-- Add custom template wrapper -->
+                    <item name="elementTmpl" xsi:type="string">Nar_AIContentGenerator/form/element/meta-title-with-button</item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+
+</form>

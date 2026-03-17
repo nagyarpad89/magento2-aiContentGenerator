@@ -1,0 +1,18 @@
+<div class="admin__field-control control">
+    <input class="admin__control-text"
+           type="text"
+           data-bind="
+               value: value,
+               valueUpdate: 'input',
+               hasFocus: focused
+           "/>
+
+    <!-- Custom button UNDER input -->
+    <div style="margin-top: 8px;">
+        <button type="button"
+                class="action-secondary"
+                data-bind="click: alert('All good here!')">
+            Generate Meta Title
+        </button>
+    </div>
+</div>
